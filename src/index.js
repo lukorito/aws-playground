@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import Amplify from "aws-amplify";
+import App from "./App";
 
-import Amplify from 'aws-amplify';
-import configurations from './aws-exports'
+import configurations from "./aws-exports";
 
-Amplify.configure(configurations)
+Amplify.configure(configurations);
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+ReactDOM.render(<App />, document.getElementById("root"));
